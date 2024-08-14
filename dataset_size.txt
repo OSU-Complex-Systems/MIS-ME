@@ -1,0 +1,6 @@
+Number of training samples: 100 
+Number of validation samples: 100 
+Number of test samples: 20 
+Number of OK001 test samples: 20 
+Number of OK002 test samples: 20 
+Number of OK003 test samples: 20 

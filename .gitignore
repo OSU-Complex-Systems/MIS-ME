@@ -1,3 +1,9 @@
+#Custom Files
+*.zip
+*.pt
+*.jpg  
+*.pth
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

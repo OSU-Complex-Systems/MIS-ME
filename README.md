@@ -3,7 +3,7 @@ Here is the official Pytorch implementation of MIS-ME proposed in "MIS-ME: A Mul
 
 **Paper Title: MIS-ME: A Multi-modal Framework for Soil Moisture Estimation**
 
-**Authors: Mohammed Rakib, Adil Aman Mohammed, Cole Diggins, Sumit Sharma, Jeff Michael Sadler, Tyson Ochsner, Arun Bagavathi**
+**Authors: Mohammed Rakib, Adil Aman Mohammed, D. Cole Diggins, Sumit Sharma, Jeff Michael Sadler, Tyson Ochsner, Arun Bagavathi**
 
 **Accepted by: DSAA 2024**
 
@@ -31,10 +31,13 @@ python train_model.py
 
 ## Citation
 ```
-@article{rakib2024mis,
-  title={MIS-ME: A Multi-modal Framework for Soil Moisture Estimation},
-  author={Rakib, Mohammed and Mohammed, Adil Aman and Diggins, Cole and Sharma, Sumit and Sadler, Jeff Michael and Ochsner, Tyson and Bagavathi, Arun},
-  journal={arXiv preprint arXiv:2408.00963},
-  year={2024}
+@misc{rakib2024mismemultimodalframeworksoil,
+      title={MIS-ME: A Multi-modal Framework for Soil Moisture Estimation}, 
+      author={Mohammed Rakib and Adil Aman Mohammed and D. Cole Diggins and Sumit Sharma and Jeff Michael Sadler and Tyson Ochsner and Arun Bagavathi},
+      year={2024},
+      eprint={2408.00963},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.00963}, 
 }
 ```

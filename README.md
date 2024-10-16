@@ -7,7 +7,7 @@ Here is the official Pytorch implementation of MIS-ME proposed in "MIS-ME: A Mul
 
 **Accepted by: DSAA 2024**
 
-[[arXiv](https://arxiv.org/abs/2408.00963v2)]
+[[arXiv](https://arxiv.org/abs/2408.00963v3)]
 <!-- [[arXiv](https://arxiv.org/abs/2408.00963v2)] [[DSAA Proceedings](url here)] -->
 
 ## Dataset

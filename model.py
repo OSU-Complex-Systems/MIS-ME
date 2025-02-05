@@ -137,6 +137,8 @@ class CombinedModel(nn.Module):
                 nn.Dropout(0.5),
                 nn.Linear(128, 1),
             )
+            
+            # self.combined_predictor = nn.Linear(image_feature_size + 16, 1)
 
         elif config.experiment in [
             "add_with_same_dim",
@@ -179,6 +181,8 @@ class CombinedModel(nn.Module):
                 nn.Dropout(0.5),
                 nn.Linear(image_feature_size // 4, 1),
             )
+            
+            # self.image_predictor = nn.Linear(image_feature_size, 1)
 
     def adjust_dimension(self, input_dim, target_dim):
         intermediate_dim = (

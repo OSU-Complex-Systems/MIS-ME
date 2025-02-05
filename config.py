@@ -5,9 +5,11 @@ import pandas as pd
 import torch
 
 
-DEBUG = True  # Set to True to train and test on a small dataset
+# DEBUG = True  # Set to True to train and test on a small dataset
+DEBUG = False
+
 BATCH_SIZE = 64  # Modify as per your requirement
-EPOCHS = 40
+EPOCHS = 80
 BASE_LR = 0.05 # Base learning rate
 TOTAL_WARMUP_EPOCHS = 5  # Total number of warmup epochs
 SHUFFLE = True  # Shuffle for training set
@@ -17,13 +19,13 @@ if DEBUG:
 ## Experiment name
 ## 3 MIS-ME Approaches:
 # experiment = "concat_with_diff_dim" #MIS-ME Approach 1
-# experiment = "hybrid_loss"  # MIS-ME  Approach 2
+experiment = "hybrid_loss"  # MIS-ME  Approach 2
 # experiment = "two_learnable_parameters" # MIS-ME  Approach 3
 
 ## Ablation Study
 # experiment = "add_with_same_dim"
 # experiment = "multiply_with_same_dim"
-experiment = "one_learnable_parameter"  #Ablation with one learnable parameter
+# experiment = "one_learnable_parameter"  #Ablation with one learnable parameter
 
 if experiment == "hybrid_loss":
     DELTA = 1.0
@@ -51,9 +53,11 @@ else:
 
 
 # Set random seeds for reproducibility. Tried 3 different seeds and reported best results in the paper
-random_seed = 0
+# random_seed = 0
 # random_seed = 24
 # random_seed = 42
+random_seed = 999
+
 random.seed(random_seed)
 np.random.seed(random_seed)
 torch.manual_seed(random_seed)
